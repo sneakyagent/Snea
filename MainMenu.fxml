@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="835.0" style="-fx-background-color: #337948;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="IntroScreenController">
+   <children>
+      <Button layoutX="105.0" layoutY="382.0" mnemonicParsing="false" onAction="#handleStart" prefHeight="64.0" prefWidth="673.0" text="START" />
+      <Label alignment="CENTER" layoutX="171.0" layoutY="66.0" prefHeight="55.0" prefWidth="493.0" styleClass="style" text="THE TEMPORAL FLUTE" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Rockwell" size="45.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="105.0" layoutY="148.0" prefHeight="200.0" prefWidth="665.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="646.0">
+               <children>
+                  <Text fx:id="content" layoutX="30.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="587.6708984375" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

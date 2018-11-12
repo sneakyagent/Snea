@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane onKeyPressed="#handleKeyEvents" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainScreenController">
+   <center>
+      <AnchorPane prefHeight="185.0" prefWidth="1280.0" BorderPane.alignment="CENTER">
+         <children>
+            <Canvas fx:id="mapView" height="500.0" layoutX="40.0" layoutY="44.0" width="1200.0" />
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <TitledPane alignment="CENTER" animated="false" collapsible="false" text="The Temporal Flute" BorderPane.alignment="CENTER">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ScrollPane prefHeight="187.0" prefWidth="951.0">
+                     <content>
+                        <AnchorPane prefHeight="200.0" prefWidth="925.0">
+                           <children>
+                              <Text layoutX="94.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="200.6708984375" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+                  <AnchorPane layoutX="943.0" prefHeight="182.0" prefWidth="333.0">
+                     <children>
+                        <Label layoutX="34.0" layoutY="14.0" text="HP :" textFill="#e11818">
+                           <font>
+                              <Font name="System Bold" size="42.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="30.0" layoutY="91.0" text="AP : " textFill="#2c3094">
+                           <font>
+                              <Font name="System Bold" size="42.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="144.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                           <font>
+                              <Font size="42.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="144.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                           <font>
+                              <Font size="42.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+        </content>
+         <font>
+            <Font size="24.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TitledPane>
+   </top>
+</BorderPane>
